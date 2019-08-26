@@ -9,13 +9,12 @@
 <div class="container">
 
 
-
-  <h1 class="my-5">Destination #{{destination.id}}
+  <h1 id="destination" class="my-5">Destination #{{destination.id}}
 
  </h1>
 
 
-  <div class="row ">
+  <div class="row">
 
     <div class="col-md-6">
       
@@ -23,14 +22,15 @@
     <div class="thumbnail"><img style="height:380px;" class="img-fluid" src="{{destination.pretty_picture.url}}" alt=""><span>{{destination.name}}</span></div>
   </div>
 
-    <div class="container-fluid">
+
+    <div  class="container-fluid">
      
          <div id="del-edit" class="col"> 
              <a class="px-md-5" href="{% url 'destination-update' destination.id %}">
-            <button class="btn btn-outline-success">Update</button></a>
+            <button class="btn btn-success">Update</button></a>
 
              <a href="{% url 'destination-delete' destination.id %}">
-            <button class="btn btn-outline-danger">Delete</button></a>
+            <button class="btn btn-danger">Delete</button></a>
 
 
         </div>
@@ -40,21 +40,21 @@
 
     </div>
 
-    <div class="col-md-4">
-      <h3 class="my-3">Description</h3>
+    <div  id="box" class="col-md-4">
+      <h3 id="blue" class="my-3">Description</h3>
       <p> {{destination.description}}</p>
-      <h3 class="my-3">Activities</h3>
+      <h3 id="blue" class="my-3">Activities</h3>
 
 
       
-      <ul>
+      <ul id="activitie">
         <li>{{destination.activities|title}}.</li>
       </ul>
 
-            <h3 class="my-3">Visiting Season</h3>
+           <h3 id="blue" class="my-3">Visiting Season</h3>
 
-            <ul>
-        <li>{{destination.optimal_visiting_season|lower|title}}.</li>
+      <ul id="season">
+        <li id="season-txt">{{destination.optimal_visiting_season|lower|title}}.</li>
       </ul>
 
 

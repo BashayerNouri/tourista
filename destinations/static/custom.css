@@ -1,3 +1,81 @@
+body{
+
+
+background-image: url("undraw_connected_world_wuay.svg");
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+
+
+#destination {
+background-color: white;
+padding: 20px;
+border-width: 5px;
+border-style: solid;
+color: #49a09d;
+border-color: #49a09d;
+
+}
+
+
+.card-header {
+
+color: #536dfe;
+text-align: center;
+font-weight: bold;
+
+}
+
+ul#activitie{
+
+list-style-image: url('icons8-running-30.png');
+
+}
+
+ul#season{
+
+list-style-image: url('icons8-calendar-25.png');
+ 
+
+}
+
+
+
+a.navbar-brand, .nav-link {
+  color: white !important;
+  cursor: pointer;
+}
+
+
+a.navbar-brand:hover, .nav-link:hover {
+  color: black !important;
+}
+
+#box {
+background-color: white;
+border-color: #49a09d;
+padding-left: 20px;
+border-style: solid;
+border-width: 5px;
+}
+
+.navbar, .jumbotron {
+background: #5f2c82;  
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  
+background: linear-gradient(to right, #49a09d, #5f2c82); 
+}
+
+.jumbotron{
+
+  font-weight: bold;
+}
+
+#blue{
+  color: #49a09d;
+}
+
 img{
   height:150px;
   width:100%;
@@ -7,6 +85,7 @@ div [class^="col-"]{
   padding-left:5px;
   padding-right:5px;
 }
+
 .card{
   transition:0.5s;
   cursor:pointer;
